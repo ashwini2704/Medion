@@ -1,0 +1,11 @@
+.modal {
+    /* background-color: "red"; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.6;
+    display: none;
+    z-index: 100; /* play with this param to show the modal behind the popup and above the page content */
+}
+
