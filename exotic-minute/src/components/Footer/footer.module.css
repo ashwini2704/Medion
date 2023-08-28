@@ -1,0 +1,13 @@
+.footer{
+    background-image: url("../../Images/wave.png");
+    background-repeat: no-repeat;
+  background-size: 100% 100%;
+ 
+}
+.VFoot{
+  padding: 30px;
+}
+.head{
+  color:rgb(0, 136, 255);
+
+}

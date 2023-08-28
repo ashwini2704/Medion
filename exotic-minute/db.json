@@ -1,0 +1,392 @@
+{
+    "medicines":[
+        {
+            "name":"Dolo",
+            "price":250,
+            "category":"Health",
+            "image":"https://img.etimg.com/thumb/msid-89328630,width-1200,height-900,imgsize-225616,resizemode-8,quality-100/prime/pharma-and-healthcare/rx-for-paracetamol-how-dolo-turned-into-a-hit-with-the-right-dose-of-perception-and-prescription.jpg"   
+        },
+        {
+            "name":"Paracetmol",
+            "price":250,
+            "category":"Health",
+            "image":"data:image/jpeg;base64,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"  
+        },
+       
+        {
+            "name": "Ibuprofen",
+            "price": 150,
+            "category": "Health",
+            "image": "https://5.imimg.com/data5/SELLER/Default/2023/7/325863554/WI/JM/SY/135658020/ibuprofen-tablets-ip-200-mg-.jpg"
+        },
+        {
+            "name": "Amoxicillin",
+            "price": 180,
+            "category": "Health",
+            "image": "https://5.imimg.com/data5/SELLER/Default/2022/12/LL/JW/ST/108376694/cipmox-amoxicillin-500mg-capsules.png"
+        },
+        {
+            "name": "Lisinopril",
+            "price": 300,
+            "category": "Health",
+            "image": "https://5.imimg.com/data5/SELLER/Default/2022/9/RR/CX/RU/51257137/lisinopril-2-5-lisinopril-5-lisinopril-10-lisinopril-20.jpg"
+        },
+        {
+            "name": "Lipitor",
+            "price": 450,
+            "category": "Health",
+            "image": "https://5.imimg.com/data5/SELLER/Default/2023/3/292981603/ER/OB/WW/159013546/lipitor-atorvastatin-80mg-tablets.jpg"
+        },
+        {
+            "name": "Ventolin",
+            "price": 120,
+            "category": "Health",
+            "image": "https://5.imimg.com/data5/SELLER/Default/2021/9/DR/KN/JV/130370074/ventolin-inhaler.jpg"
+        },
+        {
+            "name": "Metformin",
+            "price": 100,
+            "category": "Health",
+            "image": "https://example.com/metformin.jpg"
+        },
+        {
+            "name": "Nexium",
+            "price": 280,
+            "category": "Health",
+            "image": "https://example.com/nexium.jpg"
+        },
+        {
+            "name": "Zoloft",
+            "price": 220,
+            "category": "Health",
+            "image": "https://example.com/zoloft.jpg"
+        },
+        {
+            "name": "Aspirin",
+            "price": 75,
+            "category": "Health",
+            "image": "https://example.com/aspirin.jpg"
+        },
+        {
+            "name": "Cetirizine",
+            "price": 120,
+            "category": "Health",
+            "image": "https://example.com/cetirizine.jpg"
+        },
+        {
+            "name": "Prozac",
+            "price": 210,
+            "category": "Health",
+            "image": "https://example.com/prozac.jpg"
+        },
+        {
+            "name": "Loratadine",
+            "price": 90,
+            "category": "Health",
+            "image": "https://example.com/loratadine.jpg"
+        },
+        {
+            "name": "Atorvastatin",
+            "price": 380,
+            "category": "Health",
+            "image": "https://example.com/atorvastatin.jpg"
+        },
+        {
+            "name": "Omeprazole",
+            "price": 270,
+            "category": "Health",
+            "image": "https://example.com/omeprazole.jpg"
+        },
+        {
+            "name": "Metoprolol",
+            "price": 190,
+            "category": "Health",
+            "image": "https://example.com/metoprolol.jpg"
+        },
+        {
+            "name": "Ranitidine",
+            "price": 150,
+            "category": "Health",
+            "image": "https://example.com/ranitidine.jpg"
+        },
+        {
+            "name": "Prednisone",
+            "price": 240,
+            "category": "Health",
+            "image": "https://example.com/prednisone.jpg"
+        },
+        {
+            "name": "Ciprofloxacin",
+            "price": 290,
+            "category": "Health",
+            "image": "https://example.com/ciprofloxacin.jpg"
+        },
+        {
+            "name": "Simvastatin",
+            "price": 200,
+            "category": "Health",
+            "image": "https://example.com/simvastatin.jpg"
+        },
+        {
+            "name": "Acetaminophen",
+            "price": 120,
+            "category": "Health",
+            "image": "https://example.com/acetaminophen.jpg"
+        },
+        {
+            "name": "Gabapentin",
+            "price": 180,
+            "category": "Health",
+            "image": "https://example.com/gabapentin.jpg"
+        },
+        
+        {
+            "name": "Crocin",
+            "price": 50,
+            "category": "Health",
+            "image": "https://example.com/crocin.jpg"
+        },
+        {
+            "name": "Zandu Balm",
+            "price": 30,
+            "category": "Health",
+            "image": "https://example.com/zandu_balm.jpg"
+        },
+        {
+            "name": "Amrutanjan Roll-On",
+            "price": 70,
+            "category": "Health",
+            "image": "https://example.com/amrutanjan.jpg"
+        },
+        {
+            "name": "Himalaya Liv.52",
+            "price": 120,
+            "category": "Health",
+            "image": "https://example.com/liv52.jpg"
+        },
+        {
+            "name": "Dabur Chyawanprash",
+            "price": 200,
+            "category": "Nuitrition",
+            "image": "https://example.com/chyawanprash.jpg"
+        },
+        {
+            "name": "Patanjali Neem Ghan Vati",
+            "price": 75,
+            "category": "Health",
+            "image": "https://example.com/neem_ghan_vati.jpg"
+        },
+        {
+            "name": "Baidyanath Shankhpushpi",
+            "price": 90,
+            "category": "Health",
+            "image": "https://example.com/shankhpushpi.jpg"
+        },
+        {
+            "name": "Himalaya Ashwagandha",
+            "price": 150,
+            "category": "Health",
+            "image": "https://example.com/ashwagandha.jpg"
+        },
+        {
+            "name": "Baidyanath Amla Juice",
+            "price": 80,
+            "category": "Nuitrition",
+            "image": "https://example.com/amla_juice.jpg"
+        },
+        {
+            "name": "Patanjali Giloy Ghan Vati",
+            "price": 65,
+            "category": "Health",
+            "image": "https://example.com/giloy_ghan_vati.jpg"
+        },
+        {
+            "name": "Hamdard Roghan Badam Shirin",
+            "price": 100,
+            "category": "Nuitrition",
+            "image": "https://example.com/rogan_badam_shirin.jpg"
+        },
+        {
+            "name": "Dabur Honey",
+            "price": 180,
+            "category": "Nuitrition",
+            "image": "https://example.com/dabur_honey.jpg"
+        },
+        {
+            "name": "Ayush Kwath",
+            "price": 40,
+            "category": "Nuitrition",
+            "image": "https://example.com/ayush_kwath.jpg"
+        },
+        {
+            "name": "Himalaya Tentex Forte",
+            "price": 250,
+            "category": "Health",
+            "image": "https://example.com/tentex_forte.jpg"
+        },
+        {
+            "name": "Dabur Shilajit Gold",
+            "price": 350,
+            "category": "Health",
+            "image": "https://example.com/shilajit_gold.jpg"
+        },
+        {
+            "name": "Zandu Kesari Jivan",
+            "price": 120,
+            "category": "Nuitrition",
+            "image": "https://example.com/kesari_jivan.jpg"
+        },
+        {
+            "name": "Baidyanath Dashmularishta",
+            "price": 60,
+            "category": "Health",
+            "image": "https://example.com/dashmularishta.jpg"
+        },
+        {
+            "name": "Patanjali Tulsi Ghan Vati",
+            "price": 75,
+            "category": "Health",
+            "image": "https://example.com/tulsi_ghan_vati.jpg"
+        },
+        {
+            "name": "Himalaya Liv.52 DS",
+            "price": 180,
+            "category": "Health",
+            "image": "https://example.com/liv52_ds.jpg"
+        },
+        {
+            "name": "Zandu Pancharishta",
+            "price": 90,
+            "category": "Health",
+            "image": "https://example.com/pancharishta.jpg"
+        },
+        {
+            "name": "Dabur Janma Ghunti",
+            "price": 75,
+            "category": "Baby Care",
+            "image": "https://example.com/janma_ghunti.jpg"
+        },
+        {
+            "name": "Johnson's Baby Powder",
+            "price": 120,
+            "category": "Baby Care",
+            "image": "https://example.com/johnsons_baby_powder.jpg"
+        },
+        {
+            "name": "Pampers Diapers",
+            "price": 350,
+            "category": "Baby Care",
+            "image": "https://example.com/pampers_diapers.jpg"
+        },
+        {
+            "name": "Sebamed Baby Lotion",
+            "price": 250,
+            "category": "Baby Care",
+            "image": "https://example.com/sebamed_baby_lotion.jpg"
+        },
+        {
+            "name": "Himalaya Baby Shampoo",
+            "price": 150,
+            "category": "Baby Care",
+            "image": "https://example.com/himalaya_baby_shampoo.jpg"
+        },
+        {
+            "name": "Patanjali Baby Cream",
+            "price": 80,
+            "category": "Baby Care",
+            "image": "https://example.com/patanjali_baby_cream.jpg"
+        },
+        {
+            "name": "Dabur Lal Tail",
+            "price": 120,
+            "category": "Baby Care",
+            "image": "https://example.com/dabur_lal_tail.jpg"
+        },
+        {
+            "name": "Himalaya Baby Soap",
+            "price": 40,
+            "category": "Baby Care",
+            "image": "https://example.com/himalaya_baby_soap.jpg"
+        },
+        {
+            "name": "Pigeon Baby Wipes",
+            "price": 70,
+            "category": "Baby Care",
+            "image": "https://example.com/pigeon_baby_wipes.jpg"
+        },
+        {
+            "name": "Dabur Red Toothpaste",
+            "price": 40,
+            "category": "Personal Care",
+            "image": "https://example.com/dabur_red_toothpaste.jpg"
+        },
+        {
+            "name": "Colgate Total",
+            "price": 50,
+            "category": "Personal Care",
+            "image": "https://example.com/colgate_total.jpg"
+        },
+        {
+            "name": "Sensodyne Toothpaste",
+            "price": 120,
+            "category": "Personal Care",
+            "image": "https://example.com/sensodyne_toothpaste.jpg"
+        },
+        {
+            "name": "Dettol Soap",
+            "price": 30,
+            "category": "Personal Care",
+            "image": "https://example.com/dettol_soap.jpg"
+        },
+        {
+            "name": "Nivea Deodorant",
+            "price": 150,
+            "category": "Personal Care",
+            "image": "https://example.com/nivea_deodorant.jpg"
+        },
+        {
+            "name": "Patanjali Kesh Kanti Shampoo",
+            "price": 80,
+            "category": "Personal Care",
+            "image": "https://example.com/kesh_kanti_shampoo.jpg"
+        },
+        {
+            "name": "Himalaya Purifying Neem Face Wash",
+            "price": 70,
+            "category": "Skin Care",
+            "image": "https://example.com/purifying_neem_face_wash.jpg"
+        },
+        {
+            "name": "Lotus Herbal Sunscreen",
+            "price": 200,
+            "category": "Skin Care",
+            "image": "https://example.com/lotus_herbal_sunscreen.jpg"
+        },
+        {
+            "name": "Biotique Bio Papaya Revitalizing Tan-Removal Scrub",
+            "price": 180,
+            "category": "Skin Care",
+            "image": "https://example.com/biotique_papaya_scrub.jpg"
+        },
+        {
+            "name": "Himalaya Herbals Moisturizing Cream",
+            "price": 120,
+            "category": "Skin Care",
+            "image": "https://example.com/moisturizing_cream.jpg"
+        },
+        {
+            "name": "Patanjali Aloevera Gel",
+            "price": 70,
+            "category": "Skin Care",
+            "image": "https://example.com/aloe_vera_gel.jpg"
+        },
+        {
+            "name": "Vicco Turmeric Cream",
+            "price": 50,
+            "category": "Skin Care",
+            "image": "https://example.com/vicco_turmeric_cream.jpg"
+        }       
+        
+    
+    ]
+}

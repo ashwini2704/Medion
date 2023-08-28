@@ -8,14 +8,16 @@ import { useDisclosure, Modal,
     ModalBody,
     ModalCloseButton, } from '@chakra-ui/react';
 // import "./Top.css"
+import medionlogo from '../../Images/medionlogo.PNG';
 
 function TopHead() {
     const { isOpen, onOpen, onClose } = useDisclosure()
     return (
         <>
         <Flex justify={"space-between"} mt={5} mb={0}>
-            <HStack gap={10} ml={40}>
-                <Image src="exotic-minute/src/Images/medion-logo.PNG" />
+            <HStack gap={10} ml={20}>
+                <img src={medionlogo} width={1} height={0.1} alt="" />
+                {/* <Image src="exotic-minute/src/Images/medion-logo.PNG" /> */}
                     <HStack >
                         <Icon color={"blue.500"} as={MdOutlineRoom} boxSize={8}/>
                         <VStack gap={0} >
