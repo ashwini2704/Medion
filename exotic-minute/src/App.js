@@ -5,7 +5,11 @@ import { TopHead } from './components/TopHead/TopHead';
 import { Footer } from './components/Footer/footer';
 import { About } from './components/About';
 import Cart from './components/Cart'; 
+
 import { Department } from './components/Department';
+import { AllRoutes } from './components/Allroutes';
+import Navbar from './components/Navbar';
+
 function App() {
   const [cartItems, setCartItems] = useState([]);
   const handleRemoveItem=()=>{
@@ -15,9 +19,8 @@ function App() {
   return (
     <div className="App">
       <TopHead/>
-      <About/>
-      <Cart items={cartItems} onRemove={handleRemoveItem} />
-     <Department />
+      <Navbar/>
+      <AllRoutes />
       <Footer />
     </div>
   );
