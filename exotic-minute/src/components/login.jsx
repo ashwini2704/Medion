@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Box, Center, FormControl, FormLabel, Input, VStack } from '@chakra-ui/react';
 
 const AuthComponent = () => {
-  const [showSignIn, setShowSignIn] = useState(false);
+  const [showSignIn, setShowSignIn] = useState(true);
   const [showSignUp, setShowSignUp] = useState(false);
 
   const handleSignInClick = () => {
@@ -26,6 +26,8 @@ const AuthComponent = () => {
         </Button>
         {showSignIn && (
           <VStack mt={4} spacing={4}>
+            <form onSubmit={(e)=>{e.preventDefault()}}>
+
             <FormControl id="email">
               <FormLabel>Email</FormLabel>
               <Input type="email" />
@@ -35,10 +37,13 @@ const AuthComponent = () => {
               <Input type="password" />
             </FormControl>
             <Button colorScheme="blue">Sign In</Button>
+            </form>
           </VStack>
         )}
         {showSignUp && (
           <VStack mt={4} spacing={4}>
+            <form onSubmit={(e)=>{e.preventDefault()}}>
+
             <FormControl id="name">
               <FormLabel>Name</FormLabel>
               <Input type="text" />
@@ -52,6 +57,7 @@ const AuthComponent = () => {
               <Input type="password" />
             </FormControl>
             <Button colorScheme="green">Sign Up</Button>
+            </form>
           </VStack>
         )}
       </Box>
