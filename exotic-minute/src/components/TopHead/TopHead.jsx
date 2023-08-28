@@ -9,13 +9,16 @@ import { useDisclosure, Modal,
     ModalCloseButton, } from '@chakra-ui/react';
 // import "./Top.css"
 import medionlogo from '../../Images/medionlogo.PNG';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 function TopHead() {
-    const { isOpen, onOpen, onClose } = useDisclosure()
+    const { isOpen, onOpen, onClose } = useDisclosure();
+    let navigate= useNavigate()
     return (
         <>
         <Flex justify={"space-between"} mt={5} mb={0}>
             <HStack gap={10} ml={20}>
+                <Heading color={"blue.500"}>Medion</Heading>
                 <img src={medionlogo} width={1} height={0.1} alt="" />
                 {/* <Image src="exotic-minute/src/Images/medion-logo.PNG" /> */}
                     <HStack >
@@ -31,7 +34,7 @@ function TopHead() {
             </HStack>
             <HStack mr={40} gap={8}>
                 <Icon color={"blue.500"} as={MdAccountCircle} boxSize={8}/>
-                <Icon color={"blue.500"} as={MdAddShoppingCart} boxSize={8}/>                
+                <Icon color={"blue.500"} as={MdAddShoppingCart} onClick={()=> navigate("/cart") } boxSize={8}/>                
                 <Icon color={"blue.500"} as={MdCall} boxSize={8}/>                
             </HStack>
         </Flex>
