@@ -35,7 +35,7 @@ function TopHead() {
             <HStack mr={40} gap={8}>
                 <Icon color={"blue.500"} as={MdAccountCircle} boxSize={8}/>
                 <Icon color={"blue.500"} as={MdAddShoppingCart} onClick={()=> navigate("/cart") } boxSize={8}/>                
-                <Icon color={"blue.500"} as={MdCall} boxSize={8}/>                
+                <Icon color={"blue.500"} as={MdCall} onClick={()=> navigate("/contact") }  boxSize={8}/>                
             </HStack>
         </Flex>
         <Box boxShadow='md' p='0.5' rounded='md' bg='white'></Box>   

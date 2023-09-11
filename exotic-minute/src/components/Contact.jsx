@@ -3,7 +3,7 @@ import { Box, Text, VStack } from '@chakra-ui/react';
 
 const ContactComponent = () => {
   return (
-    <Box p={4} borderWidth="1px" borderRadius="lg">
+    <Box p={4} width={"50%"} m={"auto"} mt={"70px"} mb={"70px"} borderWidth="1px" borderRadius="lg">
       <VStack align="flex-start" spacing={2}>
         <Text fontWeight="bold" fontSize="xl">
           Contact Information

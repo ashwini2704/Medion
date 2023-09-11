@@ -5,7 +5,7 @@ import { TopHead } from './components/TopHead/TopHead';
 import { Footer } from './components/Footer/footer';
 import { About } from './components/About';
 import Cart from './components/Cart'; 
-
+import Home from './components/Home';
 import { Department } from './components/Department';
 import { AllRoutes } from './components/Allroutes';
 import Navbar from './components/Navbar';
