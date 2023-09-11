@@ -27,6 +27,11 @@ function Home() {
     
     return (
       <>
+            <div class="home">
+                <video autoplay muted loop>
+                <source src="../video/taking.mp4" type="video/mp4" />
+                </video>
+            </div>
 
             <SimpleGrid columns={3} spacing={10} width={"80%"} m={"auto"}>
                 {med.map((ele, i) => (
