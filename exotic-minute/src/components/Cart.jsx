@@ -1,17 +1,18 @@
+// Cart.js
 import React from 'react';
 import { Box, Button, Text, VStack } from '@chakra-ui/react';
 
-const Cart = ({ items, onRemove }) => {
+const Cart = ({ cart, removeFromCart }) => {
   return (
     <Box p={4} border="1px" borderColor="gray.200" borderRadius="md">
       <Text fontSize="xl" fontWeight="semibold" mb={3}>
         Shopping Cart
       </Text>
-      {items.length === 0 ? (
+      {cart.length === 0 ? (
         <Text>Your cart is empty.</Text>
       ) : (
         <VStack align="start" spacing={2}>
-          {items.map((item) => (
+          {cart.map((item) => (
             <Box
               key={item.id}
               display="flex"
@@ -25,7 +26,7 @@ const Cart = ({ items, onRemove }) => {
             >
               <Text>{item.name}</Text>
               <Text>${item.price.toFixed(2)}</Text>
-              <Button size="sm" onClick={() => onRemove(item.id)}>
+              <Button size="sm" onClick={() => removeFromCart(item.id)}>
                 Remove
               </Button>
             </Box>

@@ -1,36 +1,56 @@
-Medion Website
-Welcome to the Medion website! This website is dedicated to providing valuable information and resources in the realm of healthcare, wellness, and medicine. Below, you'll find important information about the website.
+# Medion - Online Medicine Store
 
-Table of Contents
-About Medion
-Website Sections
-Home
-Services
-Contact
-Tech Stacks
-About Medion
-Medion is your trusted online destination for all things related to healthcare and wellness. We strive to provide valuable information, resources, and services to help you make informed decisions about your health.
+Welcome to Medion, your one-stop destination for all your medical needs. Medion is an online medicine store that provides a wide range of pharmaceutical products. Below, you will find information about the project, its frontend pages, backend API, and the technology stack used. 
 
-Website Sections
-Home
-The Home section is the starting point for your journey on Medion. Here, you can find featured articles, announcements, and quick links to other sections of the website.
+## Frontend Pages
 
-Services
-The Services section offers a range of healthcare services and resources. Whether you're looking for medical advice, wellness tips, or information on healthcare providers, you'll find it here.
+### Home Page
+The home page serves as the main landing page for Medion. It provides an overview of our online medicine store's features and benefits, showcasing some of the featured medicines and promotions.
 
-Contact
-The Contact section provides you with a way to get in touch with our team. If you have any questions, feedback, or inquiries, please don't hesitate to reach out.
+![Home Page](link_to_image)
 
-Technology Stack
-Medion is built using cutting-edge web technologies to ensure a smooth and user-friendly experience:
+### Department Page
+The department page allows users to browse through various medical departments and categories. Users can explore medicines and products related to specific health conditions or categories.
 
-Frontend: We use a combination of HTML, CSS, and JavaScript to create a responsive and interactive website.
-Backend: Our server-side logic is powered by Node.js, and we store and manage data using a secure database system.
-Design: The website's design is carefully crafted for an intuitive user interface and a pleasant browsing experience.
-We're committed to providing you with a reliable source of healthcare information and resources. If you have any suggestions, questions, or concerns, please feel free to contact us through the Contact section.
+![Department Page](link_to_image)
 
-Thank you for visiting Medion, and we hope you find our website valuable in your journey toward better health and well-being!
+### Contact Page
+The contact page provides contact information and a form for users to reach out to us for inquiries, support, or any other questions they may have.
 
+![Contact Page](link_to_image)
 
+### Cart Page
+The cart page is where users can review and manage the items they have added to their cart before proceeding to checkout.
 
+![Cart Page](link_to_image)
 
+### About Page
+The about page offers insights into Medion, our mission, values, and commitment to providing high-quality medicines to our customers.
+
+![About Page](link_to_image)
+
+## Tech Stack
+
+Medion's frontend is built using the following technologies:
+
+- **React**: The core framework for building the user interface and providing a seamless user experience.
+- **JavaScript**: Enhancing interactivity and dynamic functionality throughout the website.
+- **Chakra UI**: A component library for React that helps in creating beautiful and accessible user interfaces.
+
+## Backend API
+
+Medion relies on an external API for retrieving medicine data. We use the following API for our backend:
+
+Backend API: [https://ash-medicine-api.onrender.com/medicines](https://ash-medicine-api.onrender.com/medicines)
+
+## Deployment
+
+The live version of Exotic minutes 882 is deployed on Netlify. You can access the application through the following link:
+
+Netlify Link: https://sparkly-salamander-87a5f4.netlify.app/
+
+Feel free to explore our wide range of medical products, add items to your cart, and enjoy the convenience of online medicine shopping. If you have any questions, concerns, or need assistance, please don't hesitate to contact our support team.
+
+Thank you for choosing Medion as your trusted online medicine store. We look forward to serving your healthcare needs.
+
+Stay healthy and safe! 💊💉
