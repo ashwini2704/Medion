@@ -1,7 +1,8 @@
+// MedCard.js
 import React from 'react';
-import { Box, Image, Text, Badge } from '@chakra-ui/react';
+import { Box, Image, Text, Badge, Button } from '@chakra-ui/react';
 
-function MedCard({ name, image,category, price }) {
+function MedCard({ name, image, category, price, addToCart }) {
   return (
     <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
       <Image src={image} />
@@ -14,11 +15,12 @@ function MedCard({ name, image,category, price }) {
           Price: {price}
         </Text>
         <Text mt="1" fontSize="md">
-        Category: {category}
+          Category: {category}
         </Text>
         <Badge mt="2" colorScheme="green">
           Available
         </Badge>
+        <Button onClick={addToCart}>Add to Cart</Button>
       </Box>
     </Box>
   );

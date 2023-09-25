@@ -10,6 +10,7 @@ import { Carousel } from "react-responsive-carousel";
 
 function Home() {
     const [med, setMed] = useState([]);
+    const [cart, setCart] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -28,6 +29,10 @@ function Home() {
         };
         fetchData();
     }, []);
+
+    const addToCart = (medicine) => {
+        setCart([...cart, medicine]);
+      };
     
     return (
       <>
@@ -60,14 +65,12 @@ function Home() {
                 </Box>
             </Grid>
             <SimpleGrid columns={3} spacing={10} width={"80%"} m={"auto"}>
-                {med.map((ele, i) => (
-                    <Box key={i} padding= {"16px"}
-                    boxShadow= {"1px 3px 5px lightBlue"}
-                    borderRadius= {"8px"}> 
-                        <MedCard {...ele} />
-                    </Box>
-                ))}
-            </SimpleGrid>
+        {med.map((ele, i) => (
+          <Box key={i} padding={"16px"} boxShadow={"1px 3px 5px lightBlue"} borderRadius={"8px"}>
+            <MedCard {...ele} addToCart={() => addToCart(ele)} />
+          </Box>
+        ))}
+      </SimpleGrid>
 
             <Box mt={20}>
                 <Heading as="h3" size="lg">Order Medicines through Prescription</Heading>
