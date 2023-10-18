@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
 import MedCard from "./medicineCart";
 import { SimpleGrid, Box, Flex, Image,Text,Heading,Grid,Button } from "@chakra-ui/react";
-import { TopHead } from "./TopHead/TopHead";
-import Navbar from "./Navbar";
 import videoClip from "../video/taking.mp4";
 import { Center } from "@chakra-ui/react";
 import { Link } from "react-router-dom/dist";
-import { Carousel } from "react-responsive-carousel";
 
 function Home() {
     const [med, setMed] = useState([]);
@@ -64,6 +61,7 @@ function Home() {
                     </Center>
                 </Box>
             </Grid>
+            <Heading color="blue.500" mb={5} boxShadow={"1px 3px 5px lightBlue"} >Medicines</Heading>
             <SimpleGrid columns={3} spacing={10} width={"80%"} m={"auto"}>
         {med.map((ele, i) => (
           <Box key={i} padding={"16px"} boxShadow={"1px 3px 5px lightBlue"} borderRadius={"8px"}>

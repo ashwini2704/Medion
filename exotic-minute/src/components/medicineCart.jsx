@@ -20,7 +20,8 @@ function MedCard({ name, image, category, price, addToCart }) {
         <Badge mt="2" colorScheme="green">
           Available
         </Badge>
-        <Button onClick={addToCart}>Add to Cart</Button>
+        <br />
+        <Button mt="5" onClick={addToCart}>Add to Cart</Button>
       </Box>
     </Box>
   );
