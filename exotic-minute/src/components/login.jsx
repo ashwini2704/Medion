@@ -9,6 +9,7 @@ import {
   VStack,
 } from '@chakra-ui/react';
 
+
 const AuthComponent = () => {
   const [showSignIn, setShowSignIn] = useState(true);
   const [showSignUp, setShowSignUp] = useState(false);
