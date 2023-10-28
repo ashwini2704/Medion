@@ -50,11 +50,11 @@ function Department() {
           View All
         </Button>
         {/* Add buttons for other categories if needed */}
-        <Button onClick={() => filterMedicinesByCategory('Nutrition')} isActive={selectedCategory === 'Nuitrition'}>
+        <Button onClick={() => filterMedicinesByCategory('Nuitrition')} isActive={selectedCategory === 'Nuitrition'}>
           Nutrition
         </Button>
         <Button
-          onClick={() => filterMedicinesByCategory('Beauty Skin Care')}
+          onClick={() => filterMedicinesByCategory('Baby Care')}
           isActive={selectedCategory === 'Baby Care'}
         >
           Baby Care
@@ -65,8 +65,8 @@ function Department() {
         <Button onClick={() => filterMedicinesByCategory('Health')} isActive={selectedCategory === 'Health'}>
           Health Service
         </Button>
-        <Button onClick={() => filterMedicinesByCategory('Immunity Boosters')} isActive={selectedCategory === 'Immunity Boosters'}>
-          Immunity Boosters
+        <Button onClick={() => filterMedicinesByCategory('Skin Care')} isActive={selectedCategory === 'Skin Care'}>
+          Skin Care
         </Button>
         <Button color={"red"} ml={"100px"} onClick={() => handleSortChange('lowToHigh')} isActive={sortBy === 'lowToHigh'}>
           Low to High Price
