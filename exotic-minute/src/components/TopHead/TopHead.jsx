@@ -1,4 +1,4 @@
-import { HStack,VStack, Flex, Image,Icon,Text, Heading, Box, Button } from '@chakra-ui/react';
+import { HStack,VStack,Link, Flex,Icon,Text, Heading, Box, Button } from '@chakra-ui/react';
 import { MdOutlineRoom,MdAccountCircle,MdKeyboardArrowDown, MdCall ,MdAddShoppingCart } from "react-icons/md";
 import { useDisclosure, Modal,
     ModalOverlay,
@@ -9,14 +9,21 @@ import { useDisclosure, Modal,
     ModalCloseButton, } from '@chakra-ui/react';
 // import "./Top.css"
 import medionlogo from '../../Images/medionlogo.PNG';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import Navbar from '../Navbar';
+import { store } from '../Redux/AuthRedux/store';
 
 function TopHead() {
     const { isOpen, onOpen, onClose } = useDisclosure();
-    let navigate= useNavigate()
+    let navigate= useNavigate();
+    const {getState} = store;
+    console.log(getState)
+  const isAuth = getState().isAuth;
+  console.log(isAuth)
+
     return (
-        <>
-        <Flex justify={"space-between"} mt={5} mb={0}>
+        <div>
+        <Flex justify={"space-between"} mt={0} mb={0}>
             <HStack gap={10} ml={20}>
                 <Heading color={"blue.500"}>Medion</Heading>
                 <img src={medionlogo} width={1} height={0.1} alt="" />
@@ -32,10 +39,25 @@ function TopHead() {
                         </VStack>
                     </HStack>
             </HStack>
+            <Navbar />
             <HStack mr={40} gap={8}>
-                <Icon color={"blue.500"} as={MdAccountCircle} boxSize={8}/>
+                <Link href='/cart'>
                 <Icon color={"blue.500"} as={MdAddShoppingCart} onClick={()=> navigate("/cart") } boxSize={8}/>                
+                </Link>
+                <Link href='/contact'>
                 <Icon color={"blue.500"} as={MdCall} onClick={()=> navigate("/contact") }  boxSize={8}/>                
+                </Link>
+                {
+                    isAuth ? 
+                    <Link href='/'>
+                     <Text color={"blue.500"} fontSize={"20px"} fontWeight={"bold"}>Logout</Text>
+                    </Link>
+                    :
+
+                    <Link href='/login'>
+                    <Icon color={"blue.500"} as={MdAccountCircle} boxSize={8}/>
+                    </Link>
+                }
             </HStack>
         </Flex>
         <Box boxShadow='md' p='0.5' rounded='md' bg='white'></Box>   
@@ -53,7 +75,7 @@ function TopHead() {
             <ModalFooter></ModalFooter>
             </ModalContent>
         </Modal>   
-        </>
+        </div>
         
     );
 }

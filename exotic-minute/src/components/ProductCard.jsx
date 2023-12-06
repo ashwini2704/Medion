@@ -3,7 +3,7 @@ import React from 'react';
 import { Box,Flex, Image, Text, Badge, Button } from '@chakra-ui/react';
 import styled from 'styled-components';
 
-function MedCard({ name, image,category, discount, price, addToCart }) {
+function ProductCard({ id,name, image,category, discount, price, editProduct }) {
   const mrp = price - ( price * discount ) / 100;
   return (
     <BOX maxW="sm" overflow="hidden" >
@@ -28,13 +28,13 @@ function MedCard({ name, image,category, discount, price, addToCart }) {
              ({category})
           </Text>
         <br />
-        <Button className='btn' onClick={addToCart}>Add to Cart</Button>
+        <Button className='btn' onClick={editProduct}>Edit</Button>
       </Box>
     </BOX>
   );
 }
 
-export default MedCard;
+export default ProductCard;
 
 const BOX = styled.div`
   display:flex;
@@ -87,7 +87,3 @@ const BOX = styled.div`
     color: #413e3e;
   }
 `
-
-// padding={"16px"}
-//               boxShadow={"1px 3px 5px lightBlue"}
-//               borderRadius={"8px"}

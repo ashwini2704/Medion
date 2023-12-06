@@ -3,12 +3,7 @@ import './App.css';
 import { useState } from "react"
 import { TopHead } from './components/TopHead/TopHead';
 import { Footer } from './components/Footer/footer';
-import { About } from './components/About';
-import Cart from './components/Cart'; 
-import Home from './components/Home';
-import { Department } from './components/Department';
-import { AllRoutes } from './components/Allroutes';
-import Navbar from './components/Navbar';
+import { AllRoutes } from './Pages/Allroutes';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -18,12 +13,15 @@ function App() {
 
   return (
     <div className="App">
-      <TopHead/>
-      <Navbar/>
-      <AllRoutes />
+       <TopHead/>
+      <AllRoutes /> 
+      {/* <Cart /> */}
       <Footer />
+      {/* <Admin /> */}
     </div>
   );
 }
+
+
 
 export default App;
