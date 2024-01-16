@@ -3,7 +3,8 @@ Medion Online Pharmacy
 Welcome to Medion, your go-to destination for purchasing pharmacy products conveniently in the online space. This platform provides users with a seamless experience, featuring a wide range of pharmaceutical products and essential health items. With user-friendly interfaces, advanced filtering and sorting options, and a powerful admin panel, Medion aims to make your online pharmacy shopping experience efficient and enjoyable.
 
 this is live url- https://medion-ten.vercel.app/
-api link - 
+
+api link - https://ash-medicine-api.onrender.com
 
 Features
 User-Friendly Interface
